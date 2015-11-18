@@ -6,7 +6,6 @@ import net.minecraft.item.Item;
 public class SkyrimMCItem extends Item {
 
 	public SkyrimMCItem() {
-		
 		super();
 		setCreativeTab(CreativeTabs.tabMisc);
 	}

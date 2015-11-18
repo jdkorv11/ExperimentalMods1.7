@@ -1,6 +1,7 @@
 package com.github.jdkorv11.skyrimmc;
 
 import com.github.jdkorv11.skyrimmc.help.Reference;
+import com.github.jdkorv11.skyrimmc.init.ModBlocks;
 import com.github.jdkorv11.skyrimmc.init.ModItems;
 
 import cpw.mods.fml.common.Mod;
@@ -14,6 +15,7 @@ public class SkyrimMC {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		ModItems.init();
+		ModBlocks.init();
 	}
 
 	@Mod.EventHandler
