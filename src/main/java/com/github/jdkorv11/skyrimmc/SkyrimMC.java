@@ -1,5 +1,6 @@
 package com.github.jdkorv11.skyrimmc;
 
+import com.github.jdkorv11.skyrimmc.crafting.ModRecipes;
 import com.github.jdkorv11.skyrimmc.help.Reference;
 import com.github.jdkorv11.skyrimmc.init.ModBlocks;
 import com.github.jdkorv11.skyrimmc.init.ModItems;
@@ -24,7 +25,7 @@ public class SkyrimMC
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event)
 	{
-
+		ModRecipes.init();
 	}
 
 	@Mod.EventHandler
