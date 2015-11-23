@@ -1,4 +1,4 @@
-package com.github.jdkorv11.skyrimmc.armory;
+package com.github.jdkorv11.skyrimmc.items.tools;
 
 import com.github.jdkorv11.skyrimmc.help.Reference;
 import com.github.jdkorv11.skyrimmc.tabs.ModTabs;

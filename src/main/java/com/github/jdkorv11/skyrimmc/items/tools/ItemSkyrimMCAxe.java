@@ -1,4 +1,4 @@
-package com.github.jdkorv11.skyrimmc.armory;
+package com.github.jdkorv11.skyrimmc.items.tools;
 
 import com.github.jdkorv11.skyrimmc.help.Reference;
 import com.github.jdkorv11.skyrimmc.tabs.ModTabs;
@@ -6,18 +6,17 @@ import com.github.jdkorv11.skyrimmc.tabs.ModTabs;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemAxe;
 
-public class ItemSkyrimMCShovel extends ItemSpade {
+public class ItemSkyrimMCAxe extends ItemAxe {
+	public final ToolMaterial toolMaterial;
 
-public final ToolMaterial toolMaterial;
-	
-	public ItemSkyrimMCShovel(ToolMaterial material) {
+	public ItemSkyrimMCAxe(ToolMaterial material) {
 		super(material);
 		toolMaterial = material;
 		setCreativeTab(ModTabs.tabSkyrimMC);
 	}
-	
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister par1IconRegister) {

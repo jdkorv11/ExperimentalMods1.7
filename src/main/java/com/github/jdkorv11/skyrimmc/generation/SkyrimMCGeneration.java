@@ -36,7 +36,7 @@ public class SkyrimMCGeneration implements IWorldGenerator {
 	}
 
 	private void generateSurface(World world, Random random, int x, int z) {
-		addOreSpawn(ModBlocks.titaniumOre, world, random, x, z, 2 + random.nextInt(3), 20, 40, 70);
+		addOreSpawn(ModBlocks.titaniumOre, world, random, x, z, 2 + random.nextInt(3), 10, 40, 70);
 	}
 
 	private void generateEnd(World world, Random random, int x, int z) {
