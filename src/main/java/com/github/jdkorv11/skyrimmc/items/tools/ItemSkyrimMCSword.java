@@ -29,10 +29,12 @@ public class ItemSkyrimMCSword extends ItemSword {
 				.registerIcon(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 	}
 
+	@Override
 	public boolean hitEntity(ItemStack stack, EntityLivingBase enemy, EntityLivingBase player) {
 		stack.damageItem(1, player);
 		enemy.addPotionEffect(new PotionEffect(Potion.poison.id, 20 * 5, 0));
 		return true;
 	}
+	
 
 }
