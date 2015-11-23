@@ -19,7 +19,7 @@ public class SkyrimMCTab extends CreativeTabs {
 	@SideOnly(Side.CLIENT)
 	public Item getTabIconItem() {
 		if (this.name == "tabSkyrimMC") {
-			return ModItems.ebonyIngot;
+			return ModItems.rustaniumIngot;
 		}
 		return null;
 	}

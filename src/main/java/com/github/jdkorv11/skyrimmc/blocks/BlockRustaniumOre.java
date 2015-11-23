@@ -6,11 +6,11 @@ import com.github.jdkorv11.skyrimmc.tabs.ModTabs;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class BlockTitaniumOre extends Block {
+public class BlockRustaniumOre extends Block {
 
-	public BlockTitaniumOre() {
+	public BlockRustaniumOre() {
 		super(Material.iron);
-		setBlockName("titaniumOre");
+		setBlockName("rustaniumOre");
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(ModTabs.tabSkyrimMC);
 		setStepSound(soundTypeMetal);

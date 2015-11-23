@@ -1,3 +1,12 @@
-item.ebonyIngot.name=Ebony Ingot
-tile.titaniumOre.name=Titanium Ore
+item.rustaniumIngot.name=Rustanium Ingot
+item.rustaniumAxe.name=Rustanium Axe
+item.rustaniumPick.name=Rustanium Pickaxe
+item.rustaniumShovel.name=Rustanium Shovel
+item.rustaniumSword.name=Rustanium Sword
+item.rustaniumHoe.name=Rustanium Hoe
+item.rustaniumHelm.name=Rustanium Helm
+item.rustaniumPlate.name=Rustanium Armor
+item.rustaniumPants.name=Rustanium Leggings
+item.rustaniumBoots.name=Rustanium Boots
+tile.rustaniumOre.name=Rustanium Ore
 itemGroup.tabSkyrimMC=SkyrimMC

@@ -7,9 +7,9 @@ import net.minecraft.item.Item;
 
 public class ModItems {
 
-	public static Item ebonyIngot = new SkyrimMCItem().setUnlocalizedName("ebonyIngot");
+	public static Item rustaniumIngot = new SkyrimMCItem().setUnlocalizedName("rustaniumIngot");
 	
 	public static void init(){
-		RegisterHelper.registerItem(ebonyIngot);
+		RegisterHelper.registerItem(rustaniumIngot);
 	}
 }

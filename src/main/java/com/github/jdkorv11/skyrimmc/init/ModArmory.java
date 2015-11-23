@@ -1,8 +1,9 @@
 package com.github.jdkorv11.skyrimmc.init;
 
 import com.github.jdkorv11.skyrimmc.help.RegisterHelper;
-import com.github.jdkorv11.skyrimmc.items.armor.ItemTitaniumArmor;
+import com.github.jdkorv11.skyrimmc.items.armor.ItemRustaniumArmor;
 import com.github.jdkorv11.skyrimmc.items.tools.ItemSkyrimMCAxe;
+import com.github.jdkorv11.skyrimmc.items.tools.ItemSkyrimMCHoe;
 import com.github.jdkorv11.skyrimmc.items.tools.ItemSkyrimMCPickaxe;
 import com.github.jdkorv11.skyrimmc.items.tools.ItemSkyrimMCShovel;
 import com.github.jdkorv11.skyrimmc.items.tools.ItemSkyrimMCSword;
@@ -12,32 +13,38 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModArmory {
-	static Item.ToolMaterial TITANIUM = EnumHelper.addToolMaterial("TITANIUM", 2, 512, 2.0F, 2.0F,
+	static Item.ToolMaterial RUSTANIUM = EnumHelper.addToolMaterial("RUSTANIUM", 2, 512, 2.0F, 2.0F,
 			14);
-	static ArmorMaterial ATITANIUM = EnumHelper.addArmorMaterial("ATITANIUM", 20,
+	static ArmorMaterial ARUSTANIUM = EnumHelper.addArmorMaterial("ARUSTANIUM", 20,
 			new int[] { 3, 7, 5, 2 }, 14);
 
-	public static Item titaniumSword = new ItemSkyrimMCSword(TITANIUM)
-			.setUnlocalizedName("titaniumSword");
-	public static Item titaniumPick = new ItemSkyrimMCPickaxe(TITANIUM)
-			.setUnlocalizedName("titaniumPick");
-	public static Item titaniumShovel = new ItemSkyrimMCShovel(TITANIUM)
-			.setUnlocalizedName("titaniumShovel");
-	public static Item titaniumAxe = new ItemSkyrimMCAxe(TITANIUM)
-			.setUnlocalizedName("titaniumAxe");
-	public static Item titaniumHelm = new ItemTitaniumArmor(ATITANIUM, 0, "titaniumHelm");
-	public static Item titaniumPlate = new ItemTitaniumArmor(ATITANIUM, 1, "titaniumPlate");
-	public static Item titaniumPants = new ItemTitaniumArmor(ATITANIUM, 2, "titaniumPants");
-	public static Item titaniumBoots = new ItemTitaniumArmor(ATITANIUM, 3, "titaniumBoots");
+	public static Item rustaniumSword = new ItemSkyrimMCSword(RUSTANIUM)
+			.setUnlocalizedName("rustaniumSword");
+	public static Item rustaniumPick = new ItemSkyrimMCPickaxe(RUSTANIUM)
+			.setUnlocalizedName("rustaniumPick");
+	public static Item rustaniumShovel = new ItemSkyrimMCShovel(RUSTANIUM)
+			.setUnlocalizedName("rustaniumShovel");
+	public static Item rustaniumAxe = new ItemSkyrimMCAxe(RUSTANIUM)
+			.setUnlocalizedName("rustaniumAxe");
+	public static Item rustaniumHoe = new ItemSkyrimMCHoe(RUSTANIUM)
+			.setUnlocalizedName("rustaniumHoe");
+	public static Item rustaniumHelm = new ItemRustaniumArmor(ARUSTANIUM, 0, "rustaniumHelm");
+	public static Item rustaniumPlate = new ItemRustaniumArmor(ARUSTANIUM, 1, "rustaniumPlate");
+	public static Item rustaniumPants = new ItemRustaniumArmor(ARUSTANIUM, 2, "rustaniumPants");
+	public static Item rustaniumBoots = new ItemRustaniumArmor(ARUSTANIUM, 3, "rustaniumBoots");
 
 	public static void init() {
-		RegisterHelper.registerItem(titaniumSword);
-		RegisterHelper.registerItem(titaniumPick);
-		RegisterHelper.registerItem(titaniumShovel);
-		RegisterHelper.registerItem(titaniumAxe);
-		RegisterHelper.registerItem(titaniumHelm);
-		RegisterHelper.registerItem(titaniumPlate);
-		RegisterHelper.registerItem(titaniumPants);
-		RegisterHelper.registerItem(titaniumBoots);
+		//register tools
+		RegisterHelper.registerItem(rustaniumSword);
+		RegisterHelper.registerItem(rustaniumPick);
+		RegisterHelper.registerItem(rustaniumShovel);
+		RegisterHelper.registerItem(rustaniumAxe);
+		RegisterHelper.registerItem(rustaniumHoe);
+		
+		//register armors
+		RegisterHelper.registerItem(rustaniumHelm);
+		RegisterHelper.registerItem(rustaniumPlate);
+		RegisterHelper.registerItem(rustaniumPants);
+		RegisterHelper.registerItem(rustaniumBoots);
 	}
 }
